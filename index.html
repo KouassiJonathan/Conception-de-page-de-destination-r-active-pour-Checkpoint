@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanLook - Boutique de Vêtements</title>
+  <meta name="description" content="Découvrez UrbanLook, votre boutique de vêtements tendance pour homme et femme. Style urbain, moderne et accessible." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">UrbanLook</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#accueil" class="nav-link active">Accueil</a></li>
+        <li class="nav-item"><a href="#produits" class="nav-link">Produits</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO / ACCUEIL ===== -->
+<section id="accueil" class="hero d-flex align-items-center justify-content-center text-white">
+  <div class="hero-overlay text-center px-4" data-aos="zoom-in">
+    <h1 class="display-4 fw-bold">Habillez-vous avec audace</h1>
+    <p class="lead">La mode urbaine 2025 est ici. Découvrez nos nouveautés.</p>
+    <a href="#produits" class="btn btn-warning btn-lg mt-3">Voir les produits</a>
+  </div>
+</section>
+
+<div class="separator-bar"></div>
+
+<!-- ===== PRODUITS ===== -->
+<section id="produits" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Nos Nouveautés</h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Produit 1 - Femme -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="https://ae01.alicdn.com/kf/HTB1q9H3PYvpK1RjSZFqq6AXUVXaD/JZ-CHIEF-Black-Velvet-Blazer-Men-Luxury-Suit-Jacket-Slim-Fit-Business-Design-Blazer-Coat-Jacquard.jpg" class="card-img-top" alt="Blazer Femme">
+            <div class="card-body text-center">
+              <h5 class="card-title">Blazer Chic</h5>
+              <p class="card-text">Pour un look professionnel et tendance.</p>
+              <a href="#" class="btn btn-dark">Acheter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 2 - Homme -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="https://media.sneakin.fr/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/u/r/urban-classics_tb4670-03512_0.jpg" class="card-img-top" alt="T-shirt Homme">
+            <div class="card-body text-center">
+              <h5 class="card-title">T-Shirt Classique</h5>
+              <p class="card-text">L'indispensable pour tous les jours.</p>
+              <a href="#" class="btn btn-dark">Acheter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 3 - Femme -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="https://cdn.vox-cdn.com/thumbor/T6N49ql2DgJSkvPpj_lCIqx8EAo=/0x0:1438x1088/1920x0/filters:focal(0x0:1438x1088):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/4092316/Endless-Summer-02_2015_09.0.jpg" class="card-img-top" alt="Robe été">
+            <div class="card-body text-center">
+              <h5 class="card-title">Robe Fleurie</h5>
+              <p class="card-text">Parfaite pour l'été.</p>
+              <a href="#" class="btn btn-dark">Acheter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 4 - Homme -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="https://th.bing.com/th/id/R.1026afee10a5b45f5124901f01892306?rik=GjC8hSjFNiKI7A&pid=ImgRaw&r=0">
+            <div class="card-body text-center">
+              <h5 class="card-title">Veste Décontractée</h5>
+              <p class="card-text">Idéale pour les soirées fraîches.</p>
+              <a href="#" class="btn btn-dark">Acheter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 5 - Accessoire -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="https://thvnext.bing.com/th/id/OIP.oBQ9Tqt6E8JF-DeRWslcgwHaFE?w=274&h=187&c=7&r=0&o=7&cb=thvnext&pid=1.7&rm=3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Casquette Urbaine</h5>
+              <p class="card-text">Style et protection en été.</p>
+              <a href="#" class="btn btn-dark">Acheter</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 6 - Femme -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm">
+            <img src="data:image/webp;base64,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">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sac en Cuir</h5>
+              <p class="card-text">Élégant, pratique et spacieux.</p>
+              <a href="#" class="btn btn-dark">Acheter</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Flèches de navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="text-center text-white bg-dark py-4">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 UrbanLook. Tous droits réservés.</p>
+  </div>
+</footer>
+<div class="separator-bar"></div>
+<!-- ===== SCRIPTS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* ==== Variables de couleur ==== */
+:root {
+  --color-primaire: #111;
+  --color-secondaire: #ffc107;
+  --color-bg: #f5f5f5;
+  --color-texte: #222;
+  --color-white: #fff;
+}
+
+/* ==== Reset & base ==== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-texte);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-secondaire) !important;
+}
+
+/* ==== HERO ==== */
+/* ==== HERO (Accueil) avec image ajustée ==== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url("../images/hero.jpg") no-repeat top center;
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+/* ==== SECTION PRODUITS ==== */
+#produits {
+  background: linear-gradient(rgba(255, 255, 255, 0.219), rgba(255, 255, 255, 0.137)),
+              url('../images/produit.jpg')
+
+              no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 60px 0;
+}
+.hero-overlay {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* ==== TITRES ==== */
+h2 {
+  color: var(--color-primaire);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ==== BOUTONS ==== */
+.btn-dark {
+  background-color: var(--color-primaire);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: var(--color-secondaire);
+  color: var(--color-primaire);
+  transform: scale(1.05);
+}
+
+/* ==== CONTACT ==== */
+#contact {
+  background: linear-gradient(rgba(245,245,245,0.95), rgba(245,245,245,0.95)), 
+              url('https://images.unsplash.com/photo-1600185365089-34c3f2758db1?auto=format&fit=crop&w=1600&q=80') 
+              no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+#contact p {
+  font-size: 1.1rem;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: var(--color-primaire);
+  color: #ccc;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .hero {
+    height: 75vh;
+    text-align: center;
+  }
+
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+.separator-bar {
+  height: 10px;
+  background: var(--color-secondaire);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
